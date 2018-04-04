@@ -20,12 +20,14 @@ var arrayTasks = {
 	},
 
 	// findDuplicates: function (arr) {
-
+	// 	const newArray = [];
+	// 	// for each element in array
+	// 	return newArray;
 	// },
 
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		return arr.filter(value => value !== valueToRemove);
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
