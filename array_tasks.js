@@ -29,9 +29,15 @@ var arrayTasks = {
 		return arr.filter(value => value !== valueToRemove);
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
-
-	// },
+	findIndexesOf: function (arr, itemToFind) {
+		const indexArray = [];
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i] === itemToFind) {
+				indexArray.push(i);
+			}
+		}
+		return indexArray;
+	},
 
 	// sumOfAllEvenNumbersSquared: function (arr) {
 
