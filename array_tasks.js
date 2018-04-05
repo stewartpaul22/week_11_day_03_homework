@@ -47,8 +47,8 @@ var arrayTasks = {
 
 	sumOfAllEvenNumbersSquared: function (arr) {
 		const evens = arr.filter(number => (number % 2 === 0));
-		const squares = evens.forEach(number => number * number);
-		return squares;
+		const squares = evens.map(number => (number * number));
+		return this.sum(squares);
 	}
 
 }
