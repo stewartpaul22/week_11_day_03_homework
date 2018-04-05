@@ -4,13 +4,20 @@ var arrayTasks = {
 		return arr1.concat(arr2);
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+		const newArray =[];
+		for (var i = 0; i < arr.length; i++) {
+			if (i === index) {
+				newArray.push(itemToAdd);
+			}
+			newArray.push(arr[i]);
+		}
+		console.log(newArray);
+		return newArray;
+	},
 
 	square: function (arr) {
-		const newArray = arr.map(x => x * x);
-		return newArray;
+		return arr.map(x => x * x);
 	},
 
 	sum: function (arr) {
