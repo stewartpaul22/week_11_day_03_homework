@@ -12,7 +12,6 @@ var arrayTasks = {
 			}
 			newArray.push(arr[i]);
 		}
-		console.log(newArray);
 		return newArray;
 	},
 
@@ -46,9 +45,11 @@ var arrayTasks = {
 		return indexArray;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		const evens = arr.filter(number => (number % 2 === 0));
+		const squares = evens.forEach(number => number * number);
+		return squares;
+	}
 
 }
 
